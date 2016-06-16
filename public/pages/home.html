@@ -1,0 +1,11 @@
+<h2>Input Strings</h2>
+<button ng-click="add()">Add more inputs</button>
+<ol>
+	<li ng-repeat="item in data.setOfStrings">
+		<input type="text" ng-model="item.value"/>
+	</li>
+</ol>
+<button ng-click="findLCS()">LCS</button>
+<button ng-click="canShow=false">Clear</button>
+<br>
+<p ng-show="canShow">LCS Result: {{result}}</p>
